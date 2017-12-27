@@ -6,9 +6,12 @@ class MNIST_DNN:
     def __init__(self, name):
         self.name = name
 
-    def __call__(self, X, training):
+    def __call__(self, X, training, reuse=False):
 
-        with tf.variable_scope(self.name):
+        with tf.variable_scope(self.name) as scope:
+
+            if reuse:
+                scope.reuse_variables()
 
             with tf.variable_scope('layer1'):
                 dense1 = tf.layers.dense(inputs=X, units=512, activation=tf.nn.relu)
@@ -29,8 +32,6 @@ class MNIST_DNN:
             with tf.variable_scope('layer5'):
                 logits = tf.layers.dense(inputs=dropout4, units=10)
 
-        tf.add_to_collection('logits', logits)
-
         return logits
 
     @property
@@ -43,13 +44,18 @@ class MNIST_CNN:
     def __init__(self, name):
         self.name = name
 
-    def __call__(self, X, training):
+    def __call__(self, X, training, reuse=False):
 
-        with tf.variable_scope(self.name):
+        with tf.variable_scope(self.name) as scope:
+
+            if reuse:
+                scope.reuse_variables()
+
+            X_img = tf.reshape(X, [-1, 28, 28, 1])
 
             # Convolutional Layer #1 and Pooling Layer #1
             with tf.variable_scope('layer1'):
-                conv1 = tf.layers.conv2d(inputs=X, filters=32, kernel_size=[3, 3], padding="SAME", activation=tf.nn.relu)
+                conv1 = tf.layers.conv2d(inputs=X_img, filters=32, kernel_size=[3, 3], padding="SAME", activation=tf.nn.relu)
                 pool1 = tf.layers.max_pooling2d(inputs=conv1, pool_size=[2, 2], padding="SAME", strides=2)
                 dropout1 = tf.layers.dropout(inputs=pool1, rate=0.7, training=training)
 
@@ -74,8 +80,6 @@ class MNIST_CNN:
             # Logits (no activation) Layer: L5 Final FC 625 inputs -> 10 outputs
             with tf.variable_scope('layer5'):
                 logits = tf.layers.dense(inputs=dropout4, units=10)
-
-            tf.add_to_collection('logits', logits)
 
         return logits
 
