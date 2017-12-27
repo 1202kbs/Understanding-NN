@@ -67,8 +67,8 @@ class MNIST_CNN:
 
             # Convolutional Layer #2=3 and Pooling Layer #3
             with tf.variable_scope('layer3'):
-                conv3 = tf.layers.conv2d(inputs=dropout2, filters=128, kernel_size=[3, 3], padding="same", activation=tf.nn.relu)
-                pool3 = tf.layers.max_pooling2d(inputs=conv3, pool_size=[2, 2], padding="same", strides=2)
+                conv3 = tf.layers.conv2d(inputs=dropout2, filters=128, kernel_size=[3, 3], padding="SAME", activation=tf.nn.relu)
+                pool3 = tf.layers.max_pooling2d(inputs=conv3, pool_size=[2, 2], padding="SAME", strides=2)
                 dropout3 = tf.layers.dropout(inputs=pool3, rate=0.7, training=training)
 
             # Dense Layer with Relu
