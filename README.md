@@ -18,8 +18,6 @@ Work under progress.
 
 1.3 Performing AM in Code Space
 -------------------------------
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/train.gif)
-
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/DNN_2.png)
