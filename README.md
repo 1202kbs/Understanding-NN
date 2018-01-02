@@ -41,6 +41,13 @@ neuron of the deep neural network (DNN).
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_1_SA/DNN_2.png)
 
 
+2.2 Simple Taylor Decomposition
+-------------------------------
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_2.png)
+
+
 Prerequisites
 --------------
 This code requires [Tensorflow](https://www.tensorflow.org/).
