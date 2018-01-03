@@ -30,7 +30,7 @@ Work under progress.
 
 2 Explaining DNN Decisions
 --------------------------
-This section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output
+In this section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output
 neuron of the deep neural network (DNN).
 
 
