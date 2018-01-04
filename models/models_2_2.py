@@ -6,7 +6,7 @@ class MNIST_DNN:
     def __init__(self, name):
         self.name = name
 
-    def __call__(self, X, training, reuse=False):
+    def __call__(self, X, reuse=False):
 
         with tf.variable_scope(self.name) as scope:
 
