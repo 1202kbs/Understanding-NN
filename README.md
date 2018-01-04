@@ -49,9 +49,9 @@ neuron of the deep neural network (DNN).
 
 2.3 Layer-wise Relevance Propagation (Work Under Progress)
 ----------------------------------------------------------
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_LRP/DNN_1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_LRP/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_LRP/DNN_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_LRP/DNN_2.png)
 
 
 Prerequisites
