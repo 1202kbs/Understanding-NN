@@ -81,9 +81,18 @@ class LRP:
 
             for i in range(len(self.ops)):
 
+                if i + 2 is len(self.ops):
+
+                    if 'conv2d' in self.ops[i]:
+                        Rs.append(self.backprop_conv_input(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
+                    else:
+                        Rs.append(self.backprop_dense_input(self.activations[i + 1], self.weights[j], Rs[-1]))
+
+                    continue
+
                 if 'softmax' in self.ops[i]:
                     Rs.append(self.activations[i][:,logit,None])
-                    Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
+                    Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j][:,logit,None], Rs[-1]))
                     j += 1
                 elif 'dense' in self.ops[i]:
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
@@ -147,9 +156,9 @@ class LRP:
 
         c_o = nn_ops.conv2d_backprop_input(tf.shape(X), kernel, s, strides, padding)
         c_p = nn_ops.conv2d_backprop_input(tf.shape(X), W_p, s, strides, padding)
-        c_n = nn_ops.covn2d_backprop_input(tf.shape(X), W_n, s, strides, padding)
+        c_n = nn_ops.conv2d_backprop_input(tf.shape(X), W_n, s, strides, padding)
 
-        return X * c_0 - L * c_p - H * c_n
+        return X * c_o - L * c_p - H * c_n
 
     def backprop_dense_input(self, X, kernel, relevance, lowest=0., highest=1.):
         W_p = tf.maximum(0., kernel)
@@ -169,4 +178,4 @@ class LRP:
         c_p = tf.matmul(s, tf.transpose(W_p))
         c_n = tf.matmul(s, tf.transpose(W_n))
 
-        return X * c_0 - L * c_p - H * c_n
+        return X * c_o - L * c_p - H * c_n
