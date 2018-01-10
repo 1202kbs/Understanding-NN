@@ -47,11 +47,25 @@ neuron of the deep neural network (DNN).
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_2.png)
 
-2.3 Layer-wise Relevance Propagation (Work Under Progress)
-----------------------------------------------------------
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_LRP/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_LRP/DNN_2.png)
+3 The LRP Explanation Framework
+-------------------------------
+In this section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output
+neuron of the deep neural network (DNN).
+
+
+3.1 Layer-wise Relevance Propagation (Work Under Progress)
+----------------------------------------------------------
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_2.png)
+
+
+3.2 Deep Taylor Decomposition (Work Under Progress)
+---------------------------------------------------
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_2.png)
 
 
 Prerequisites
