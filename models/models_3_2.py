@@ -103,11 +103,17 @@ class Taylor:
                     Rs.append(self.backprop_conv(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
                     j += 1
                 elif 'pooling' in self.activations[i].name.lower():
-                    if 'max' in self.activations[i].name.lower():
-                        pooling_type = 'max'
-                    else:
-                        pooling_type = 'avg'
-                    Rs.append(self.backprop_pool(self.activations[i + 1], Rs[-1], self.pool_ksize, self.pool_strides, pooling_type))
+                    
+                    # Apply average pooling backprop regardless of type of pooling layer used, following recommendations by Montavon et al.
+                    # Uncomment code below if you want to apply the winner-take-all redistribution policy suggested by Bach et al.
+                    #
+                    # if 'max' in self.activations[i].name.lower():
+                    #     pooling_type = 'max'
+                    # else:
+                    #     pooling_type = 'avg'
+                    # Rs.append(self.backprop_pool(self.activations[i + 1], Rs[-1], self.pool_ksize, self.pool_strides, pooling_type))
+
+                    Rs.append(self.backprop_pool(self.activations[i + 1], Rs[-1], self.pool_ksize, self.pool_strides, 'avg'))
                 else:
                     raise Error('Unknown operation.')
 
@@ -122,7 +128,7 @@ class Taylor:
 
     def backprop_pool(self, activation, relevance, ksize, strides, pooling_type, padding='SAME'):
 
-        if pooling_type.lower() is 'avg':
+        if pooling_type.lower() in 'avg':
             z = nn_ops.avg_pool(activation, ksize, strides, padding) + 1e-10
             s = relevance / z
             c = gen_nn_ops._avg_pool_grad(tf.shape(activation), s, ksize, strides, padding)
