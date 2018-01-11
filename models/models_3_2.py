@@ -54,12 +54,12 @@ class MNIST_CNN:
 class LRP:
 
     def __init__(self, activations, weights, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
-        self.ops = []
 
-        for op in activations[1:]:
-            self.ops.append(re.split('/|:', op.name)[3].lower())
-
-        self.ops.reverse()
+        self.last_ind = len(activations)
+        for op in activations:
+            self.last_ind -= 1
+            if any([word in op.name for word in ['conv2d', 'max_pooling2d', 'dense']]):
+                break
 
         self.activations = activations
         self.activations.reverse()
@@ -79,33 +79,35 @@ class LRP:
             Rs = []
             j = 0
 
-            for i in range(len(self.ops)):
+            for i in range(len(self.activations) - 1):
 
-                if i + 2 is len(self.ops):
+                if i is self.last_ind:
 
-                    if 'conv2d' in self.ops[i]:
+                    print(self.activations[i].name)
+
+                    if 'conv2d' in self.activations[i].name.lower():
                         Rs.append(self.backprop_conv_input(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
                     else:
                         Rs.append(self.backprop_dense_input(self.activations[i + 1], self.weights[j], Rs[-1]))
 
                     continue
 
-                if 'softmax' in self.ops[i]:
+                if 'softmax' in self.activations[i].name.lower():
                     Rs.append(self.activations[i][:,logit,None])
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j][:,logit,None], Rs[-1]))
                     j += 1
-                elif 'dense' in self.ops[i]:
+                elif 'dense' in self.activations[i].name.lower():
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
                     j += 1
-                elif 'reshape' in self.ops[i]:
+                elif 'reshape' in self.activations[i].name.lower():
                     shape = self.activations[i + 1].get_shape().as_list()
                     shape[0] = -1
                     Rs.append(tf.reshape(Rs[-1], shape))
-                elif 'conv2d' in self.ops[i]:
+                elif 'conv2d' in self.activations[i].name.lower():
                     Rs.append(self.backprop_conv(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
                     j += 1
                 else:
-                    if 'max' in self.ops[i]:
+                    if 'max' in self.activations[i].name.lower():
                         pooling_type = 'max'
                     else:
                         pooling_type = 'avg'
