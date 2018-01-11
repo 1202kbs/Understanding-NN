@@ -1,5 +1,3 @@
-import re
-
 from tensorflow.python.ops import nn_ops, gen_nn_ops
 import tensorflow as tf
 
@@ -83,8 +81,6 @@ class LRP:
 
                 if i is self.last_ind:
 
-                    print(self.activations[i].name)
-
                     if 'conv2d' in self.activations[i].name.lower():
                         Rs.append(self.backprop_conv_input(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
                     else:
@@ -117,7 +113,7 @@ class LRP:
 
     def backprop_conv(self, activation, kernel, relevance, strides, padding='SAME'):
         W_p = tf.maximum(0., kernel)
-        z = nn_ops.conv2d(activation, W_p, strides, padding) + 1e-9
+        z = nn_ops.conv2d(activation, W_p, strides, padding) + 1e-10
         s = relevance / z
         c = nn_ops.conv2d_backprop_input(tf.shape(activation), W_p, s, strides, padding)
         return activation * c
@@ -125,19 +121,19 @@ class LRP:
     def backprop_pool(self, activation, relevance, ksize, strides, pooling_type, padding='SAME'):
 
         if pooling_type.lower() is 'avg':
-            z = nn_ops.avg_pool(activation, ksize, strides, padding) + 1e-9
+            z = nn_ops.avg_pool(activation, ksize, strides, padding) + 1e-10
             s = relevance / z
             c = gen_nn_ops._avg_pool_grad(tf.shape(activation), s, ksize, strides, padding)
             return activation * c
         else:
-            z = nn_ops.max_pool(activation, ksize, strides, padding) + 1e-9
+            z = nn_ops.max_pool(activation, ksize, strides, padding) + 1e-10
             s = relevance / z
             c = gen_nn_ops._max_pool_grad(activation, z, s, ksize, strides, padding)
             return activation * c
 
     def backprop_dense(self, activation, kernel, relevance):
         W_p = tf.maximum(0., kernel)
-        z = tf.matmul(activation, W_p) + 1e-9
+        z = tf.matmul(activation, W_p) + 1e-10
         s = relevance / z
         c = tf.matmul(s, tf.transpose(W_p))
         return activation * c
@@ -153,7 +149,7 @@ class LRP:
         z_p = nn_ops.conv2d(L, W_p, strides, padding)
         z_n = nn_ops.conv2d(H, W_n, strides, padding)
 
-        z = z_o - z_p - z_n + 1e-9
+        z = z_o - z_p - z_n + 1e-10
         s = relevance / z
 
         c_o = nn_ops.conv2d_backprop_input(tf.shape(X), kernel, s, strides, padding)
@@ -173,7 +169,7 @@ class LRP:
         z_p = tf.matmul(L, W_p)
         z_n = tf.matmul(H, W_n)
 
-        z = z_o - z_p - z_n + 1e-9
+        z = z_o - z_p - z_n + 1e-10
         s = relevance / z
 
         c_o = tf.matmul(s, tf.transpose(kernel))
