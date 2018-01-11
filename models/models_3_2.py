@@ -49,7 +49,7 @@ class MNIST_CNN:
         return tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope=self.name)
 
 
-class LRP:
+class Taylor:
 
     def __init__(self, activations, weights, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
 

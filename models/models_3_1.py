@@ -53,7 +53,7 @@ class MNIST_DNN:
         return tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope=self.name)
 
 
-class Taylor:
+class LRP:
 
     def __init__(self, alpha, activations, weights, biases, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
         self.alpha = alpha
