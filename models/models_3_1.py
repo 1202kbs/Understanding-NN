@@ -91,15 +91,17 @@ class LRP:
                     shape = self.activations[i + 1].get_shape().as_list()
                     shape[0] = -1
                     Rs.append(tf.reshape(Rs[-1], shape))
-                elif 'conv2d' in self.activations[i].name.lower():
+                elif 'conv' in self.activations[i].name.lower():
                     Rs.append(self.backprop_conv(self.activations[i + 1], self.weights[j], self.biases[j], Rs[-1], self.conv_strides))
                     j += 1
-                else:
+                elif 'pooling' in self.activations[i].name.lower():
                     if 'max' in self.activations[i].name.lower():
                         pooling_type = 'max'
                     else:
                         pooling_type = 'avg'
                     Rs.append(self.backprop_pool(self.activations[i + 1], Rs[-1], self.pool_ksize, self.pool_strides, pooling_type))
+                else:
+                    raise Error('Unknown operation.')
 
             return Rs[-1]
 
