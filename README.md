@@ -5,8 +5,9 @@ Tensorflow walkthrough of [Methods for Interpreting and Understanding Deep Neura
 
 ## 1 Interpreting a DNN Model
 
-*This section corresponds to Section 3 in the original paper.* This section focuses on the problem of interpreting a concept
-learned by a deep neural network (DNN).
+*This section corresponds to Section 3 in the original paper.*
+
+This section focuses on the problem of interpreting a concept learned by a deep neural network (DNN).
 
 
 ### 1.1 Activation Maximization (AM)
@@ -30,8 +31,9 @@ Work under progress.
 
 ## 2 Explaining DNN Decisions
 
-*This section corresponds to Section 4 in the original paper.* In this section, we ask for a given data point x, what makes
-it representative of a certain concept encoded in some output neuron of the deep neural network (DNN).
+*This section corresponds to Section 4 in the original paper.*
+
+In this section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output neuron of the deep neural network (DNN).
 
 
 ### 2.1 Sensitivity Analysis
@@ -50,7 +52,9 @@ it representative of a certain concept encoded in some output neuron of the deep
 
 ## 3 The LRP Explanation Framework
 
-*This section corresponds to Section 5 in the original paper.* In this section, we focus on the [layer-wise relevance propagation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140) (LRP) technique introduced by Bach et al. and the [Deep Taylor Decomposition](https://www.sciencedirect.com/science/article/pii/S0031320316303582) technique introduced by Montavon et al. for explaining
+*This section corresponds to Section 5 in the original paper.*
+
+In this section, we focus on the [layer-wise relevance propagation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140) (LRP) technique introduced by Bach et al. and the [Deep Taylor Decomposition](https://www.sciencedirect.com/science/article/pii/S0031320316303582) technique introduced by Montavon et al. for explaining
 deep neural network decisions.
 
 
@@ -70,7 +74,9 @@ deep neural network decisions.
 
 ## 4 Quantifying Explanation Quality
 
-*This section corresponds to Section 7 in the original paper.* In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced a number of explanation techniques. While each technique is based on its own intuition or mathematical principle, it is also important to dene at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. A quantitative framework allows to compare explanation techniques specifically for a target
+*This section corresponds to Section 7 in the original paper.*
+
+In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced a number of explanation techniques. While each technique is based on its own intuition or mathematical principle, it is also important to dene at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. A quantitative framework allows to compare explanation techniques specifically for a target
 problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two important properties of an explanation, along with possible evaluation metrics.
 
 
@@ -79,6 +85,15 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/graph.png)
+
+
+### 4.1 Explanation Selectivity
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_2.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/graph.png)
 
 
 ## Prerequisites
