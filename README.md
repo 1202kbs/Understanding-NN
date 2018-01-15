@@ -87,7 +87,7 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/graph.png)
 
 
-### 4.1 Explanation Selectivity
+### 4.2 Explanation Selectivity
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_1.png)
 
