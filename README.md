@@ -93,7 +93,9 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_2.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/graph.png)
+<p align="center">
+  <img src="https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/graph.png" alt="Explanation Technique Comparison Graph"/>
+</p>
 
 
 ## Prerequisites
