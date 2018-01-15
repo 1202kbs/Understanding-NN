@@ -116,7 +116,7 @@ class LRP:
         b_n = tf.minimum(0., bias)
         z_n = nn_ops.conv2d(activation, W_n, strides, padding) + b_n
         s_n = relevance / z_n
-        c_n = nn_ops.conv2d_backprop_input(tf.shape(activation), W_p, s_n, strides, padding)
+        c_n = nn_ops.conv2d_backprop_input(tf.shape(activation), W_n, s_n, strides, padding)
 
         return activation * (self.alpha * c_p + (1 - self.alpha) * c_n)
 
