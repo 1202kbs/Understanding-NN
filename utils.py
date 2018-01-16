@@ -28,6 +28,22 @@ def plot(samples, X_dim, channel):
 	return fig
 
 
+
+def pixel_range(img):
+	vmin, vmax = np.min(img), np.max(img)
+
+	if vmin * vmax >= 0:
+		return (vmin, vmax)
+	else:
+
+		if -vmin > vmax:
+			vmax = -vmin
+		else:
+			vmin = -vmax
+
+		return (vmin, vmax)
+
+
 def translate(img, x, y):
 	"""
 	Translates the given image.
