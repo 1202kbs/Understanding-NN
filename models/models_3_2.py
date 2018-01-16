@@ -88,10 +88,13 @@ class Taylor:
 
                     continue
 
-                if 'softmax' in self.activations[i].name.lower():
+                if i is 0:
                     Rs.append(self.activations[i][:,logit,None])
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j][:,logit,None], Rs[-1]))
                     j += 1
+
+                    continue
+                
                 elif 'dense' in self.activations[i].name.lower():
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
                     j += 1
@@ -103,7 +106,7 @@ class Taylor:
                     Rs.append(self.backprop_conv(self.activations[i + 1], self.weights[j], Rs[-1], self.conv_strides))
                     j += 1
                 elif 'pooling' in self.activations[i].name.lower():
-                    
+
                     # Apply average pooling backprop regardless of type of pooling layer used, following recommendations by Montavon et al.
                     # Uncomment code below if you want to apply the winner-take-all redistribution policy suggested by Bach et al.
                     #

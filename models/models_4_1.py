@@ -114,10 +114,13 @@ class Taylor:
 
                     continue
 
-                if 'softmax' in self.activations[i].name.lower():
+                if i is 0:
                     Rs.append(self.activations[i][:,logit,None])
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j][:,logit,None], Rs[-1]))
                     j += 1
+
+                    continue
+                
                 elif 'dense' in self.activations[i].name.lower():
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
                     j += 1
