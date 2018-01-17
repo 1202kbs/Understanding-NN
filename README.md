@@ -1,6 +1,6 @@
 # Understanding NN
 
-Tensorflow walkthrough of [Methods for Interpreting and Understanding Deep Neural Networks](https://arxiv.org/abs/1706.07979).
+This repository is intended to be a self-contained tutorial of the DNN interpretation and explanation techniques introduced in the paper [Methods for Interpreting and Understanding Deep Neural Networks](https://arxiv.org/abs/1706.07979). Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
 
 
 ## 1 Interpreting a DNN Model
@@ -53,14 +53,14 @@ In this section, we focus on the [layer-wise relevance propagation](http://journ
 deep neural network decisions.
 
 
-### 3.1 Layer-wise Relevance Propagation (Work Under Progress)
+### 3.1 Layer-wise Relevance Propagation
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_2.png)
 
 
-### 3.2 Deep Taylor Decomposition (Work Under Progress)
+### 3.2 Deep Taylor Decomposition
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_1.png)
 
@@ -96,11 +96,6 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 ## Prerequisites
 
 This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www.numpy.org/) and [OpenCV](https://opencv.org/).
-
-
-## Usage
-
-Step-by-step tutorials are implemented in Jupyter Notebooks.
 
 
 ## References
