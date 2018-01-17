@@ -105,7 +105,7 @@ Step-by-step tutorials are implemented in Jupyter Notebooks.
 
 ## References
 
-I only referenced the first paper in sections that are not mentioned below.
+I referenced the first paper in all of the sections (including those not listed below).
 
 [1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
 
