@@ -2,8 +2,9 @@
 
 This repository is intended to be a self-contained tutorial of the DNN interpretation and explanation techniques introduced in the paper [Methods for Interpreting and Understanding Deep Neural Networks](https://arxiv.org/abs/1706.07979). Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
 
-The nbviewer seems to render equations better than the default Github notebook renderer. The links to nbviewer is listed below in corresponding sections of README.md.
+**UPDATE**
 
+It seems that Github is unable to render some of the equations in the notebooks. I strongly recommending using the nbviewer until I find out what the problem is. The links to nbviewer is listed below in corresponding sections of README.md.
 
 ## 1 Interpreting a DNN Model
 
