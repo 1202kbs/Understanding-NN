@@ -2,6 +2,8 @@
 
 This repository is intended to be a self-contained tutorial of the DNN interpretation and explanation techniques introduced in the paper [Methods for Interpreting and Understanding Deep Neural Networks](https://arxiv.org/abs/1706.07979). Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
 
+The nbviewer seems to render equations better than the default Github notebook renderer. The links to nbviewer is listed below in corresponding sections of README.md.
+
 
 ## 1 Interpreting a DNN Model
 
@@ -16,12 +18,16 @@ This section focuses on the problem of interpreting a concept learned by a deep 
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_1_Activation_Maximization/DNN_2.png)
 
+[Link to Section 1.1 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/1.1%20Activation%20Maximization.ipynb)
+
 
 ### 1.3 Performing AM in Code Space
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/DNN_2.png)
+
+[Link to Section 1.3 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/1.3%20Performing%20AM%20in%20Code%20Space.ipynb)
 
 
 ## 2 Explaining DNN Decisions
@@ -37,12 +43,16 @@ In this section, we ask for a given data point x, what makes it representative o
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_1_SA/DNN_2.png)
 
+[Link to Section 2.1 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.1%20Sensitivity%20Analysis.ipynb)
+
 
 ### 2.2 Simple Taylor Decomposition
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_2.png)
+
+[Link to Section 2.2 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.2%20Simple%20Taylor%20Decomposition.ipynb)
 
 
 ## 3 The LRP Explanation Framework
@@ -59,12 +69,20 @@ deep neural network decisions.
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_2.png)
 
+[Link to Section 3.1 Part 1 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
+
+[Link to Section 3.1 Part 2 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%282%29.ipynb)
+
 
 ### 3.2 Deep Taylor Decomposition
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_2.png)
+
+[Link to Section 3.2 Part 1 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.2%20Deep%20Taylor%20Decomposition%20%281%29.ipynb)
+
+[Link to Section 3.2 Part 2 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.2%20Deep%20Taylor%20Decomposition%20%282%29.ipynb)
 
 
 ## 4 Quantifying Explanation Quality
@@ -81,6 +99,8 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/graph.png)
 
+[Link to Section 4.1 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.1%20Explanation%20Continuity.ipynb)
+
 
 ### 4.2 Explanation Selectivity
 
@@ -91,6 +111,8 @@ problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two impor
 <p align="center">
   <img src="https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/graph.png" alt="Explanation Technique Comparison Graph"/>
 </p>
+
+[Link to Section 4.2 nbviewer](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Explanation%20Selectivity.ipynb)
 
 
 ## Prerequisites
