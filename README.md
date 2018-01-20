@@ -6,6 +6,8 @@ This repository is intended to be a self-contained tutorial of the DNN interpret
 
 It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below.
 
+I haven't managed to implement RBM for Section 1.2 yet. I'll update ASAP.
+
 
 ## Nbviewer Links
 
