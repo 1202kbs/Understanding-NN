@@ -3,3 +3,4 @@ __pycache__/
 MNIST_data/
 tf_logs/
 papers/
+out/
