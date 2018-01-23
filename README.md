@@ -19,7 +19,9 @@ I haven't managed to implement RBM for Section 1.2 yet. I'll update ASAP.
 
 [2.2 Simple Taylor Decomposition](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.2%20Simple%20Taylor%20Decomposition.ipynb)
 
-[2.3 Deconvolution](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.3%Deconvolution.ipynb)
+[2.3 Deconvolution](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.3%20Deconvolution.ipynb)
+
+[2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
 
 [3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
 
@@ -83,6 +85,17 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/layer2.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/layer3.png)
+
+
+### 2.4 Backpropagation
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/prototype1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/prototype2.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
 
 
 ## 3 The LRP Explanation Framework
@@ -152,13 +165,13 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 [3] A. Dosovitskiy and T. Brox. Generating images with perceptual similarity metrics based on deep networks. In NIPS, 2016.
 
-#### Sections 2.1 ~ 2.2
-
-[1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
-
 #### Section 2.3
 
 [1] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
+
+#### Section 2.4
+
+[1]  K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
 
 #### Section 3.1
 
@@ -168,6 +181,6 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 [1] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
 
-#### Sections 4.1 ~ 4.2
+#### Sections 2.1 ~ 2.2 and 4.1 ~ 4.2
 
 [1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
