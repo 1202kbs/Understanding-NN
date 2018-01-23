@@ -1,12 +1,10 @@
 # Understanding NN
 
-This repository is intended to be a self-contained tutorial of the DNN interpretation and explanation techniques introduced in the paper [Methods for Interpreting and Understanding Deep Neural Networks](https://arxiv.org/abs/1706.07979). Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
+This repository is intended to be a self-contained tutorial of various DNN interpretation and explanation techniques. Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
 
 **UPDATE**
 
 It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below.
-
-I haven't managed to implement RBM for Section 1.2 yet. I'll update ASAP.
 
 
 ## Nbviewer Links
@@ -38,8 +36,6 @@ I haven't managed to implement RBM for Section 1.2 yet. I'll update ASAP.
 
 ## 1 Interpreting a DNN Model
 
-*This section corresponds to Section 3 in the original paper.*
-
 This section focuses on the problem of interpreting a concept learned by a deep neural network (DNN).
 
 
@@ -58,8 +54,6 @@ This section focuses on the problem of interpreting a concept learned by a deep 
 
 
 ## 2 Explaining DNN Decisions
-
-*This section corresponds to Section 4 in the original paper.*
 
 In this section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output neuron of the deep neural network (DNN).
 
@@ -100,8 +94,6 @@ In this section, we ask for a given data point x, what makes it representative o
 
 ## 3 The LRP Explanation Framework
 
-*This section corresponds to Section 5 in the original paper.*
-
 In this section, we focus on the [layer-wise relevance propagation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140) (LRP) technique introduced by Bach et al. and the [Deep Taylor Decomposition](https://www.sciencedirect.com/science/article/pii/S0031320316303582) technique introduced by Montavon et al. for explaining
 deep neural network decisions.
 
@@ -122,10 +114,7 @@ deep neural network decisions.
 
 ## 4 Quantifying Explanation Quality
 
-*This section corresponds to Section 7 in the original paper.*
-
-In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced a number of explanation techniques. While each technique is based on its own intuition or mathematical principle, it is also important to dene at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. A quantitative framework allows to compare explanation techniques specifically for a target
-problem, e.g. ILSVRC or MIT Places. We present in Sections 4.1 and 4.2 two important properties of an explanation, along with possible evaluation metrics.
+In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced a number of explanation techniques. While each technique is based on its own intuition or mathematical principle, it is also important to define at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. We present in Sections 4.1 and 4.2 two important properties of an explanation, along with possible evaluation metrics.
 
 
 ### 4.1 Explanation Continuity
