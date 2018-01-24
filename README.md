@@ -100,9 +100,7 @@ deep neural network decisions.
 
 ### 3.1 Layer-wise Relevance Propagation
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/DNN_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/fig.png)
 
 
 ### 3.2 Deep Taylor Decomposition
