@@ -143,8 +143,8 @@ class LRP:
         s_p = relevance / z_p
         c_p = tf.matmul(s_p, tf.transpose(W_p))
 
-        W_n = tf.maximum(0., kernel)
-        b_n = tf.maximum(0., bias)
+        W_n = tf.minimum(0., kernel)
+        b_n = tf.minimum(0., bias)
         z_n = tf.matmul(activation, W_n) + b_n
         s_n = relevance / z_n
         c_n = tf.matmul(s_n, tf.transpose(W_n))
