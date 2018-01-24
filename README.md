@@ -140,13 +140,11 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 ## References
 
-#### Section 1.1
+#### Sections 1.1 ~ 2.2 and 4.1 ~ 4.2
 
 [1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
 
 #### Section 1.3
-
-[1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
 
 [2] Nguyen, A., Dosovitskiy, A., Yosinski, J., Brox, T., Clune, J., 2016. Synthesizing the preferred inputs for neurons in neural networks via deep generator networks. In: Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain. pp. 3387-3395.
 
@@ -154,20 +152,16 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 #### Section 2.3
 
-[1] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
+[4] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
 
 #### Section 2.4
 
-[1]  K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
+[5]  K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
 
 #### Section 3.1
 
-[1] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
+[6] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
 
 #### Section 3.2
 
-[1] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
-
-#### Sections 2.1 ~ 2.2 and 4.1 ~ 4.2
-
-[1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
+[7] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
