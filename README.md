@@ -31,7 +31,7 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [4.1 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.1%20Explanation%20Continuity.ipynb)
 
-[4.2 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Explanation%20Selectivity.ipynb)
+[4.2 Explanation Selectivity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Explanation%20Selectivity.ipynb)
 
 
 ## 1 Interpreting a DNN Model
