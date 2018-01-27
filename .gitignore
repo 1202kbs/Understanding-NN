@@ -4,3 +4,4 @@ MNIST_data/
 tf_logs/
 papers/
 out/
+MNIST_cluttered/

@@ -21,6 +21,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
 
+[2.5 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.5%20CAM.ipynb)
+
 [3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
 
 [3.1 Layer-wise Relevance Propagation Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%282%29.ipynb)
@@ -92,6 +94,15 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
 
 
+### 2.4 Backpropagation
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_2.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_3.png)
+
+
 ## 3 The LRP Explanation Framework
 
 In this section, we focus on the [layer-wise relevance propagation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140) (LRP) technique introduced by Bach et al. and the [Deep Taylor Decomposition](https://www.sciencedirect.com/science/article/pii/S0031320316303582) technique introduced by Montavon et al. for explaining
@@ -142,7 +153,7 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 #### Sections 1.1 ~ 2.2 and 4.1 ~ 4.2
 
-[1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arxiv preprint, arXiv:1706.07979.
+[1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arXiv preprint arXiv:1706.07979, 2017.
 
 #### Section 1.3
 
@@ -156,12 +167,16 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 #### Section 2.4
 
-[5]  K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
+[5] K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
+
+#### Section 2.5
+
+[6] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
 
 #### Section 3.1
 
-[6] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
+[7] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
 
 #### Section 3.2
 
-[7] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
+[8] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
