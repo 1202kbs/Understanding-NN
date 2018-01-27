@@ -94,7 +94,7 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
 
 
-### 2.4 Backpropagation
+### 2.5 Class Activation Map
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_1.png)
 
