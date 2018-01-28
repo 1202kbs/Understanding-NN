@@ -21,6 +21,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
 
+[2.5 Guided Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Guided%20Backpropagation.ipynb)
+
 [2.6 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.6%20CAM.ipynb)
 
 [3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
@@ -92,6 +94,13 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
+
+
+### 2.5 Guided Backpropagation
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_GBP/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_GBP/DNN_2.png)
 
 
 ### 2.6 Class Activation Map
@@ -171,12 +180,16 @@ This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www
 
 #### Section 2.5
 
-[6] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
+[6] Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. Striving for simplicity: The all convolutional net. arXiv preprint arXiv:1412.6806, 2014.
+
+#### Section 2.6
+
+[7] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
 
 #### Section 3.1
 
-[7] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
+[8] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
 
 #### Section 3.2
 
-[8] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
+[9] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
