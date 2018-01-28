@@ -25,6 +25,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.6 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.6%20CAM.ipynb)
 
+[2.7 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.7%20Grad-CAM.ipynb)
+
 [3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
 
 [3.1 Layer-wise Relevance Propagation Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%282%29.ipynb)
