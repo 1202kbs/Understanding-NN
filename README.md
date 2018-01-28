@@ -17,32 +17,32 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.2 Simple Taylor Decomposition](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.2%20Simple%20Taylor%20Decomposition.ipynb)
 
-[2.3 Deconvolution](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.3%20Deconvolution.ipynb)
+[2.3 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.3%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
 
-[2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
+[2.3 Layer-wise Relevance Propagation Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.3%20Layer-wise%20Relevance%20Propagation%20%282%29.ipynb)
 
-[2.5 Guided Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.5%20Guided%20Backpropagation.ipynb)
+[2.4 Deep Taylor Decomposition Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Deep%20Taylor%20Decomposition%20%281%29.ipynb)
 
-[2.6 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.6%20CAM.ipynb)
+[2.4 Deep Taylor Decomposition Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Deep%20Taylor%20Decomposition%20%282%29.ipynb)
 
-[2.7 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.7%20Grad-CAM.ipynb)
+[3.1 Deconvolution](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Deconvolution.ipynb)
 
-[3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
+[3.2 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.2%20Backpropagation.ipynb)
 
-[3.1 Layer-wise Relevance Propagation Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%282%29.ipynb)
+[3.3 Guided Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.3%20Guided%20Backpropagation.ipynb)
 
-[3.2 Deep Taylor Decomposition Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.2%20Deep%20Taylor%20Decomposition%20%281%29.ipynb)
+[4.1 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.1%20CAM.ipynb)
 
-[3.2 Deep Taylor Decomposition Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.2%20Deep%20Taylor%20Decomposition%20%282%29.ipynb)
+[4.2 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Grad-CAM.ipynb)
 
-[4.1 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.1%20Explanation%20Continuity.ipynb)
+[5.1 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/5.1%20Explanation%20Continuity.ipynb)
 
-[4.2 Explanation Selectivity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Explanation%20Selectivity.ipynb)
+[5.2 Explanation Selectivity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/5.2%20Explanation%20Selectivity.ipynb)
 
 
-## 1 Interpreting a DNN Model
+## 1 Activation Maximization
 
-This section focuses on the problem of interpreting a concept learned by a deep neural network (DNN).
+This section focuses on interpreting a concept learned by a deep neural network (DNN) through activation maximization.
 
 
 ### 1.1 Activation Maximization (AM)
@@ -59,9 +59,9 @@ This section focuses on the problem of interpreting a concept learned by a deep 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/1_3_AM_Code/DNN_2.png)
 
 
-## 2 Explaining DNN Decisions
+## 2 Layer-wise Relevance Propagation
 
-In this section, we ask for a given data point x, what makes it representative of a certain concept encoded in some output neuron of the deep neural network (DNN).
+In this section, we first introduce the concept of relevance score with Sensitivity Analysis, explore basic relevance decomposition with Simple Taylor Decomposition and then build up to various Layer-wise Relevance Propagation methods such as Deep Taylor Decomposition.
 
 
 ### 2.1 Sensitivity Analysis
@@ -78,83 +78,87 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_2_STD/DNN_2.png)
 
 
-### 2.3 Deconvolution
+### 2.3 Layer-wise Relevance Propagation
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/DNN_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_LRP/fig.png)
 
 
-### 2.4 Backpropagation
+### 2.4 Deep Taylor Decomposition
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/prototype1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_DTD/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/prototype2.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_DTD/DNN_2.png)
 
 
-### 2.5 Guided Backpropagation
+## 3 Gradient Based Methods
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_GBP/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_GBP/DNN_2.png)
+In this section, we explore various types of gradient-based visualization methods.
 
 
-### 2.6 Class Activation Map
+### 3.1 Deconvolution
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/DNN_1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_DC/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/DNN_2.png)
-
-
-### 2.7 Grad-CAM
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_7_GCAM/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_7_GCAM/DNN_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_DC/DNN_2.png)
 
 
-## 3 The LRP Explanation Framework
+### 3.2 Backpropagation
 
-In this section, we focus on the [layer-wise relevance propagation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130140) (LRP) technique introduced by Bach et al. and the [Deep Taylor Decomposition](https://www.sciencedirect.com/science/article/pii/S0031320316303582) technique introduced by Montavon et al. for explaining
-deep neural network decisions.
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/prototype1.png)
 
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/prototype2.png)
 
-### 3.1 Layer-wise Relevance Propagation
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/saliency1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_1_LRP/fig.png)
-
-
-### 3.2 Deep Taylor Decomposition
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_DTD/DNN_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/saliency2.png)
 
 
-## 4 Quantifying Explanation Quality
+### 3.3 Guided Backpropagation
 
-In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced a number of explanation techniques. While each technique is based on its own intuition or mathematical principle, it is also important to define at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. We present in Sections 4.1 and 4.2 two important properties of an explanation, along with possible evaluation metrics.
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_3_GBP/DNN_1.png)
 
-
-### 4.1 Explanation Continuity
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/DNN_1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_EC/graph.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_3_GBP/DNN_2.png)
 
 
-### 4.2 Explanation Selectivity
+## 4 Class Activation Map
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_1.png)
+In this section, we go through the basic Class Activation Map (CAM) and its generalized version, Grad-CAM.
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/DNN_2.png)
+
+### 4.1 Class Activation Map
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_CAM/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_1_CAM/DNN_2.png)
+
+
+### 4.2 Grad-CAM
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_GCAM/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_GCAM/DNN_2.png)
+
+
+## 5 Quantifying Explanation Quality
+
+While each explanation technique is based on its own intuition or mathematical principle, it is also important to define at a more abstract level what are the characteristics of a good explanation, and to be able to test for these characteristics quantitatively. We present in Sections 5.1 and 5.2 two important properties of an explanation, along with possible evaluation metrics.
+
+
+### 5.1 Explanation Continuity
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/5_1_EC/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/5_1_EC/graph.png)
+
+
+### 5.2 Explanation Selectivity
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/5_2_ES/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/5_2_ES/DNN_2.png)
 
 <p align="center">
-  <img src="https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_ES/graph.png" alt="Explanation Technique Comparison Graph"/>
+  <img src="https://github.com/1202kbs/Understanding-NN/blob/master/assets/5_2_ES/graph.png" alt="Explanation Technique Comparison Graph"/>
 </p>
 
 
@@ -165,7 +169,7 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 ## References
 
-#### Sections 1.1 ~ 2.2 and 4.1 ~ 4.2
+#### Sections 1.1 ~ 2.4 and 4.1 ~ 4.2
 
 [1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arXiv preprint arXiv:1706.07979, 2017.
 
@@ -177,28 +181,28 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 #### Section 2.3
 
-[4] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
+[4] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
 
 #### Section 2.4
 
-[5] K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
-
-#### Section 2.5
-
-[6] Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. Striving for simplicity: The all convolutional net. arXiv preprint arXiv:1412.6806, 2014.
-
-#### Section 2.6
-
-[7] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
-
-#### Section 2.7
-
-[8] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
+[5] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
 
 #### Section 3.1
 
-[9] Bach, S., Binder, A., Montavon, G., Klauschen, F., Müller, K.R., Samek, W., 07 2015. On pixel-wise explanations for non-linear classier decisions by layer-wise relevance propagation. PLOS ONE 10 (7), 1-46.
+[6] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
 
 #### Section 3.2
 
-[10] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
+[7] K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
+
+#### Section 3.3
+
+[8] Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. Striving for simplicity: The all convolutional net. arXiv preprint arXiv:1412.6806, 2014.
+
+#### Section 4.1
+
+[9] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
+
+#### Section 4.2
+
+[10] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
