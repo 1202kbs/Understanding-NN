@@ -105,11 +105,9 @@ In this section, we ask for a given data point x, what makes it representative o
 
 ### 2.6 Class Activation Map
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_2.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_3.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/DNN_2.png)
 
 
 ## 3 The LRP Explanation Framework
