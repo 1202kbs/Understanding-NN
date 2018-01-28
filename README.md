@@ -21,7 +21,7 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
 
-[2.5 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.5%20CAM.ipynb)
+[2.6 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.6%20CAM.ipynb)
 
 [3.1 Layer-wise Relevance Propagation Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Layer-wise%20Relevance%20Propagation%20%281%29.ipynb)
 
@@ -94,13 +94,13 @@ In this section, we ask for a given data point x, what makes it representative o
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_BP/saliency2.png)
 
 
-### 2.5 Class Activation Map
+### 2.6 Class Activation Map
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_2.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_2.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_CAM/cam_3.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_6_CAM/cam_3.png)
 
 
 ## 3 The LRP Explanation Framework
