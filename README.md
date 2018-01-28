@@ -80,11 +80,9 @@ In this section, we ask for a given data point x, what makes it representative o
 
 ### 2.3 Deconvolution
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/layer1.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/DNN_1.png)
 
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/layer2.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/layer3.png)
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_3_DC/DNN_2.png)
 
 
 ### 2.4 Backpropagation
