@@ -86,11 +86,7 @@ class Taylor:
                 break
 
         self.activations = activations
-        self.activations.reverse()
-
         self.weights = weights
-        self.weights.reverse()
-
         self.conv_ksize = conv_ksize
         self.pool_ksize = pool_ksize
         self.conv_strides = conv_strides

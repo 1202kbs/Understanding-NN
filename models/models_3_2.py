@@ -54,17 +54,13 @@ class Taylor:
     def __init__(self, activations, weights, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
 
         self.last_ind = len(activations)
-        for op in activations:
+        for op in activations[::-1]:
             self.last_ind -= 1
             if any([word in op.name for word in ['conv', 'pooling', 'dense']]):
                 break
 
         self.activations = activations
-        self.activations.reverse()
-
         self.weights = weights
-        self.weights.reverse()
-
         self.conv_ksize = conv_ksize
         self.pool_ksize = pool_ksize
         self.conv_strides = conv_strides
@@ -94,7 +90,7 @@ class Taylor:
                     j += 1
 
                     continue
-                
+
                 elif 'dense' in self.activations[i].name.lower():
                     Rs.append(self.backprop_dense(self.activations[i + 1], self.weights[j], Rs[-1]))
                     j += 1

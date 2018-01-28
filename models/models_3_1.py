@@ -58,14 +58,8 @@ class LRP:
     def __init__(self, alpha, activations, weights, biases, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
         self.alpha = alpha
         self.activations = activations
-        self.activations.reverse()
-
         self.weights = weights
-        self.weights.reverse()
-
         self.biases = biases
-        self.biases.reverse()
-
         self.conv_ksize = conv_ksize
         self.pool_ksize = pool_ksize
         self.conv_strides = conv_strides
