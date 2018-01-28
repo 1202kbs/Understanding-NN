@@ -92,7 +92,7 @@ In this section, we first introduce the concept of relevance score with Sensitiv
 
 ## 3 Gradient Based Methods
 
-In this section, we explore various types of gradient-based visualization methods.
+In this section, we explore various types of gradient-based visualization methods such as Deconvolution, Backpropagation, and Guided Backpropagation.
 
 
 ### 3.1 Deconvolution
