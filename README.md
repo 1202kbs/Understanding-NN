@@ -155,7 +155,7 @@ In Sections 2 and 3 (Sections 4 and 5 in the original paper), we have introduced
 
 ## Prerequisites
 
-This code requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www.numpy.org/) and [OpenCV](https://opencv.org/).
+This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [OpenCV](https://opencv.org/).
 
 
 ## References
