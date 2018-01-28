@@ -21,7 +21,7 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [2.4 Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Backpropagation.ipynb)
 
-[2.5 Guided Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Guided%20Backpropagation.ipynb)
+[2.5 Guided Backpropagation](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.5%20Guided%20Backpropagation.ipynb)
 
 [2.6 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.6%20CAM.ipynb)
 
