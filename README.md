@@ -210,7 +210,7 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 #### Section 3.4
 
-[9] M. Sundararajan, A. Taly, and Q. Yan. Gradients of counterfactuals. arXiv preprint arXiv:1611.02639, 2016.
+[9] Mukund Sundararajan, Ankur Taly, and Qiqi Yan. Axiomatic attribution for deep networks. arXiv preprint arXiv:1703.01365, 2017.
 
 #### Section 4.1
 
