@@ -169,7 +169,7 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 ## References
 
-#### Sections 1.1 ~ 2.4 and 4.1 ~ 4.2
+#### Sections 1.1 ~ 2.2 and 5.1 ~ 5.2
 
 [1] Montavon, G., Samek, W., Müller, K., jun 2017. Methods for Interpreting and Understanding Deep Neural Networks. arXiv preprint arXiv:1706.07979, 2017.
 
