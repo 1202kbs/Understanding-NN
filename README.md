@@ -4,7 +4,7 @@ This repository is intended to be a self-contained tutorial of various DNN inter
 
 **UPDATE**
 
-It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below.
+It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below. I haven't added explanations for recently implemented tutorials yet.
 
 
 ## Nbviewer Links
@@ -24,6 +24,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 [2.4 Deep Taylor Decomposition Part 1](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Deep%20Taylor%20Decomposition%20%281%29.ipynb)
 
 [2.4 Deep Taylor Decomposition Part 2](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.4%20Deep%20Taylor%20Decomposition%20%282%29.ipynb)
+
+[2.5 DeepLIFT](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/2.5%20DeepLIFT.ipynb)
 
 [3.1 Deconvolution](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.1%20Deconvolution.ipynb)
 
@@ -63,7 +65,7 @@ This section focuses on interpreting a concept learned by a deep neural network 
 
 ## 2 Layer-wise Relevance Propagation
 
-In this section, we first introduce the concept of relevance score with Sensitivity Analysis, explore basic relevance decomposition with Simple Taylor Decomposition and then build up to various Layer-wise Relevance Propagation methods such as Deep Taylor Decomposition.
+In this section, we first introduce the concept of relevance score with Sensitivity Analysis, explore basic relevance decomposition with Simple Taylor Decomposition and then build up to various Layer-wise Relevance Propagation methods such as Deep Taylor Decomposition and DeepLIFT.
 
 
 ### 2.1 Sensitivity Analysis
@@ -92,9 +94,16 @@ In this section, we first introduce the concept of relevance score with Sensitiv
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_4_DTD/DNN_2.png)
 
 
+### 2.5 DeepLIFT
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_DL/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/2_5_DL/DNN_2.png)
+
+
 ## 3 Gradient Based Methods
 
-In this section, we explore various types of gradient-based visualization methods such as Deconvolution, Backpropagation, and Guided Backpropagation.
+In this section, we explore various types of gradient-based visualization methods such as Deconvolution, Backpropagation, Guided Backpropagation, and Integrated Gradients.
 
 
 ### 3.1 Deconvolution
@@ -105,10 +114,6 @@ In this section, we explore various types of gradient-based visualization method
 
 
 ### 3.2 Backpropagation
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/prototype1.png)
-
-![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/prototype2.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_2_BP/saliency1.png)
 
@@ -196,26 +201,30 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 [5] Montavon, G., Lapuschkin, S., Binder, A., Samek, W., Müller, K.R., 2017. Explaining nonlinear classication decisions with deep Taylor decomposition. Pattern Recognition 65, 211-222.
 
+#### Section 2.5
+
+[6] Avanti Shrikumar, Peyton Greenside, and Anshul Kundaje. Learning Important Features Through Propagating Activation Differences. arXiv preprint arXiv:1704.02685, 2017.
+
 #### Section 3.1
 
-[6] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
+[7] Zeiler, M. D., Fergus, R., 2014. Visualizing and understanding convolutional networks. In: Computer Vision - ECCV 2014 - 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I. pp. 818-833.
 
 #### Section 3.2
 
-[7] K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
+[8] K. Simonyan, A. Vedaldi, and A. Zisserman. Deep inside convolutional networks: Visualising image classification models and saliency maps. In Workshop at International Conference on Learning Representations, 2014.
 
 #### Section 3.3
 
-[8] Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. Striving for simplicity: The all convolutional net. arXiv preprint arXiv:1412.6806, 2014.
+[9] Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. Striving for simplicity: The all convolutional net. arXiv preprint arXiv:1412.6806, 2014.
 
 #### Section 3.4
 
-[9] Mukund Sundararajan, Ankur Taly, and Qiqi Yan. Axiomatic attribution for deep networks. arXiv preprint arXiv:1703.01365, 2017.
+[10] Mukund Sundararajan, Ankur Taly, and Qiqi Yan. Axiomatic attribution for deep networks. arXiv preprint arXiv:1703.01365, 2017.
 
 #### Section 4.1
 
-[10] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
+[11] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
 
 #### Section 4.2
 
-[11] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
+[12] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
