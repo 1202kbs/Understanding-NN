@@ -105,7 +105,7 @@ In this section, we first introduce the concept of relevance score with Sensitiv
 
 ## 3 Gradient Based Methods
 
-In this section, we explore various types of gradient-based visualization methods such as Deconvolution, Backpropagation, Guided Backpropagation, Integrated Gradients and SmoothGrad. Check out [grad.py](https://github.com/1202kbs/Understanding-NN/blob/master/models/grad.py), a modular implementation of various gradient-based visualization techniques.
+Implementation of various types of gradient-based visualization methods such as Deconvolution, Backpropagation, Guided Backpropagation, Integrated Gradients and SmoothGrad. Check out [grad.py](https://github.com/1202kbs/Understanding-NN/blob/master/models/grad.py), a modular implementation of various gradient-based visualization techniques.
 
 
 ### 3.1 Deconvolution
@@ -145,7 +145,7 @@ In this section, we explore various types of gradient-based visualization method
 
 ## 4 Class Activation Map
 
-In this section, we go through the basic Class Activation Map (CAM) and its generalized version, Grad-CAM.
+Implementation of Class Activation Map (CAM) and its generalized version, Grad-CAM on the [cluttered MNIST](https://github.com/deepmind/mnist-cluttered) dataset.
 
 
 ### 4.1 Class Activation Map
