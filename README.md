@@ -35,6 +35,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [3.4 Integrated Gradients](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.4%20Integrated%20Gradients.ipynb)
 
+[3.5 SmoothGrad](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/3.5%20SmoothGrad.ipynb)
+
 [4.1 Class Activation Map](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.1%20CAM.ipynb)
 
 [4.2 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Grad-CAM.ipynb)
@@ -134,6 +136,13 @@ In this section, we explore various types of gradient-based visualization method
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_4_IG/DNN_2.png)
 
 
+### 3.5 SmoothGrad
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_5_SG/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/3_5_SG/DNN_2.png)
+
+
 ## 4 Class Activation Map
 
 In this section, we go through the basic Class Activation Map (CAM) and its generalized version, Grad-CAM.
@@ -221,10 +230,14 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 
 [10] Mukund Sundararajan, Ankur Taly, and Qiqi Yan. Axiomatic attribution for deep networks. arXiv preprint arXiv:1703.01365, 2017.
 
+#### Section 3.5
+
+[11] Daniel Smilkov, Nikhil Thorat, Been Kim, Fernanda Viégas, and Martin Wattenberg. SmoothGrad: removing noise by adding noise. arXiv preprint arXiv:1706.03825, 2017.
+
 #### Section 4.1
 
-[11] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
+[12] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2921–2929, 2016.
 
 #### Section 4.2
 
-[12] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
+[13] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
