@@ -1,11 +1,10 @@
 # Understanding NN
 
-This repository is intended to be a self-contained tutorial of various DNN interpretation and explanation techniques. Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks.
+This repository is intended to be a tutorial of various DNN interpretation and explanation techniques. Explanation of the theoretical background as well as step-by-step Tensorflow implementation for practical usage are both covered in the Jupyter Notebooks. I did not include explanation for techniques for which I thought the algorithm as well as the explanation of the original paper was clear.
 
 **UPDATE**
 
-It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below. I haven't added explanations for recently implemented tutorials yet.
-
+It seems that Github is unable to render some of the equations in the notebooks. I strongly recommend using the nbviewer until I find out what the problem is (you can also download the repo and view them on your local environment). Links are listed below.
 
 ## Nbviewer Links
 
