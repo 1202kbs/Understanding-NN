@@ -40,6 +40,8 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [4.2 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Grad-CAM.ipynb)
 
+[4.2 Grad-CAM++](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.3%20Grad-CAM++.ipynb)
+
 [5.1 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/5.1%20Explanation%20Continuity.ipynb)
 
 [5.2 Explanation Selectivity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/5.2%20Explanation%20Selectivity.ipynb)
@@ -144,7 +146,7 @@ Implementation of various types of gradient-based visualization methods such as 
 
 ## 4 Class Activation Map
 
-Implementation of Class Activation Map (CAM) and its generalized version, Grad-CAM on the [cluttered MNIST](https://github.com/deepmind/mnist-cluttered) dataset.
+Implementation of Class Activation Map (CAM) and its generalized versions, Grad-CAM and Grad-CAM++ the [cluttered MNIST](https://github.com/deepmind/mnist-cluttered) dataset.
 
 
 ### 4.1 Class Activation Map
@@ -159,6 +161,13 @@ Implementation of Class Activation Map (CAM) and its generalized version, Grad-C
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_GCAM/DNN_1.png)
 
 ![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_2_GCAM/DNN_2.png)
+
+
+### 4.3 Grad-CAM++
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_3_GCAMPP/DNN_1.png)
+
+![alt tag](https://github.com/1202kbs/Understanding-NN/blob/master/assets/4_3_GCAMPP/DNN_2.png)
 
 
 ## 5 Quantifying Explanation Quality
@@ -240,3 +249,7 @@ This tutorial requires [Tensorflow](https://www.tensorflow.org/), [NumPy](http:/
 #### Section 4.2
 
 [13] R. R.Selvaraju, A. Das, R. Vedantam, M. Cogswell, D. Parikh, and D. Batra. Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization. arXiv:1611.01646, 2016.
+
+#### Section 4.3
+
+[14] A. Chattopadhyay, A. Sarkar, P. Howlader, and V. N. Balasubramanian. Grad-cam++: Generalized gradient-based visual explanations for deep convolutional networks. CoRR, abs/1710.11063, 2017.
