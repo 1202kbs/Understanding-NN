@@ -40,7 +40,7 @@ It seems that Github is unable to render some of the equations in the notebooks.
 
 [4.2 Grad-CAM](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.2%20Grad-CAM.ipynb)
 
-[4.2 Grad-CAM++](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.3%20Grad-CAM++.ipynb)
+[4.2 Grad-CAM++](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/4.3%20Grad-CAM%2B%2B.ipynb)
 
 [5.1 Explanation Continuity](http://nbviewer.jupyter.org/github/1202kbs/Understanding-NN/blob/master/5.1%20Explanation%20Continuity.ipynb)
 
