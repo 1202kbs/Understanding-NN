@@ -106,7 +106,7 @@ In this section, we first introduce the concept of relevance score with Sensitiv
 
 ## 3 Gradient Based Methods
 
-Implementation of various types of gradient-based visualization methods such as Deconvolution, Backpropagation, Guided Backpropagation, Integrated Gradients and SmoothGrad. Check out [grad.py](https://github.com/1202kbs/Understanding-NN/blob/master/models/grad.py), a modular implementation of various gradient-based visualization techniques.
+Implementation of various types of gradient-based visualization methods such as Deconvolution, Backpropagation, Guided Backpropagation, Integrated Gradients and SmoothGrad.
 
 
 ### 3.1 Deconvolution
