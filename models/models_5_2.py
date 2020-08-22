@@ -79,7 +79,7 @@ class Taylor:
 
     def __init__(self, activations, weights, conv_ksize, pool_ksize, conv_strides, pool_strides, name):
 
-        self.last_ind = len(activations)
+        self.last_ind = len(activations) - 1
         for op in activations:
             self.last_ind -= 1
             if any([word in op.name for word in ['conv', 'pooling', 'dense']]):
